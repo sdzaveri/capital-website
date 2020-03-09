@@ -12,17 +12,6 @@ exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) =>
     }
   };
 
-  // const sassRule = {
-  //   test: /\.s(a|c)ss$/,
-  //   use: isSSR
-  //     ? [loaders.null()]
-  //     : [
-  //         loaders.miniCssExtract(),
-  //         loaders.css({ ...cssLoaderOptions, importLoaders: 2 }),
-  //         loaders.postcss({ plugins: postCssPlugins }),
-  //         sassLoader
-  //       ]
-  // };
   const sassRuleModules = {
     test: /\.scss$/,
     use: [
@@ -39,11 +28,6 @@ exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) =>
   const dataVizRule = {
     test: require.resolve(`@opengov/data-viz`),
     use: loaders.null(),
-  };
-
-  const mdRuleModules = {
-    test: /\.md$/,
-    use: 'raw-loader'
   };
 
   let configRules = [];
@@ -67,7 +51,6 @@ exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) =>
     case 'develop-html':
       configRules = configRules.concat([sassRuleModules]);
       configRules = configRules.concat([dataVizRule]);
-      configRules = configRules.concat([mdRuleModules]);
       break;
   }
 

@@ -32,11 +32,9 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "src/pages/overview/principles.mdx"
+      - file: "src/pages/overview/principles.md"
         label: "Principles"
         name: "principles"
-        extension: mdx
-        format: frontmatter
         fields:
           - { name: title, label: Title }
           - { name: description, label: Description }
@@ -45,6 +43,14 @@ collections:
       - file: "src/pages/overview/contribution-developers.md"
         label: "Developer Contribution Guidelines"
         name: "devcontributionguidelines"
+        fields:
+          - { name: title, label: Title }
+          - { name: description, label: Description }
+          - { name: activeTab, label: Active Tab }
+          - { name: body, label: Body, widget: markdown }
+      - file: "src/pages/patterns/visuals/iconography.md"
+        label: "Iconography"
+        name: "icons"
         fields:
           - { name: title, label: Title }
           - { name: description, label: Description }

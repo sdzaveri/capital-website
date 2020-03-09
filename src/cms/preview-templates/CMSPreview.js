@@ -1,15 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LayoutDefault } from '../../components/Layout/LayoutDefault'
+import { Header } from '@opengov/component-library/capital';
+
+import '../../components/Layouts/base.scss';
+import styles from '../../components/Layouts/Layout.scss';
 
 const CMSPreview = ({ entry, widgetFor }) => {
   return (
-    <LayoutDefault
-      children={widgetFor('body')}
-      description={entry.getIn(['data', 'description'])}
-      activeTab={entry.getIn(['data', 'activeTab'])}
-      title={entry.getIn(['data', 'title'])}
-    />
+    <>
+      <div className={styles.pageHeader}>
+        <Header variant="hero">{entry.getIn(['data', 'title'])}</Header>
+        <p className={styles.pageDescription}>{entry.getIn(['data', 'description']) && entry.getIn(['data', 'description'])}</p>
+      </div>
+      <div className={styles.content}>{widgetFor('body')}</div>
+    </>
   );
 };
 

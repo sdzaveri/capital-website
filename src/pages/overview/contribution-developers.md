@@ -1,7 +1,6 @@
 ---
-title: Contribution
-description: Some page description
-activeTab: overview
+title: Page title
+description: Page description
+activeTab: Blahhhh
 ---
-
-Contribution guidelines for developers
+slkdjflskjf alskdj flaksdj fla;ksd fla;skd f

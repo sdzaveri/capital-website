@@ -5,7 +5,7 @@ activeTab: patterns
 ---
 
 import { Header } from '@opengov/component-library/capital'
-import { Grid } from '../../../components/MDX';
+import { Grid } from '../../components/MDX';
 
 ## Why Benton Sans
 

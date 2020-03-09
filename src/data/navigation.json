@@ -67,32 +67,23 @@
   ],
   "patterns": [
     {
-      "title": "Test",
-      "links": [
-        {
-          "title": "Testing",
-          "url": "/patterns/test"
-        }
-      ]
-    },
-    {
       "title": "Visuals",
       "links": [
         {
           "title": "Color",
-          "url": "/patterns/visuals/color"
+          "url": "/patterns/color"
         },
         {
           "title": "Typography",
-          "url": "/patterns/visuals/typography"
+          "url": "/patterns/typography"
         },
         {
           "title": "Iconography",
-          "url": "/patterns/visuals/iconography"
+          "url": "/patterns/iconography"
         },
         {
           "title": "Illustration",
-          "url": "/patterns/visuals/illustration"
+          "url": "/patterns/illustration"
         }
       ]
     },

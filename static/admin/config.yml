@@ -17,16 +17,16 @@ collections:
       - { name: description, label: Description }
       - { name: activeTab, label: Active Tab }
       - { name: body, label: Body, widget: markdown }
-  - name: "navigation"
-    label: "Navigation"
+  - name: "data"
+    label: "Data"
+    extension: "json"
+    format: "json"
+    editor:
+       preview: false
     files:
       - file: "src/data/navigation.json"
         label: "Navigation"
         name: "navigation"
-        extension: "json"
-        format: "json"
-        editor:
-           preview: false
         fields:
           - { name: body, label: Body, widget: code }
   - name: "pages"

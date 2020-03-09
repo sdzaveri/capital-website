@@ -11,7 +11,7 @@ $leftNav-width: $unit-1 * 35;
 }
 
 main {
-  width: calc(100vw - $leftNav-width);
+  width: calc(100vw - #{$leftNav-width});
   height: calc(100vh - #{$unit-8});
   overflow: auto;
   grid-area: main;

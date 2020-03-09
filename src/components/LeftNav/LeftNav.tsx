@@ -29,7 +29,7 @@ const renderNavItems = section => {
   });
 };
 
-const LeftNav = ({ activeTab }) => {
+const LeftNav = ({ activeTab = 'overview' }) => {
   const navigationMenuJSX = [];
   navigation[activeTab].map(section => {
     if (section.package) {

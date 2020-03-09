@@ -1,0 +1,143 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+$leftNav-width: $unit-1 * 35;
+
+.bodyWrapper {
+  display: grid;
+  grid-template-areas: "head head"
+    "nav  main";
+  grid-template-rows: $unit-8 1fr;
+  grid-template-columns: $leftNav-width 1fr;
+}
+
+main {
+  width: calc(100vw - $leftNav-width);
+  height: calc(100vh - #{$unit-8});
+  overflow: auto;
+  grid-area: main;
+  position: relative;
+}
+
+.homeWrapper {
+  display: grid;
+  grid-template-areas: "head"
+    "main";
+  grid-template-rows: $unit-8 auto;
+  grid-template-columns: auto;
+  background-color: $color-gray-100;
+
+  main {
+    width: 100vw;
+    height: calc(100vh - #{$unit-8});
+    overflow: auto;
+    grid-area: main;
+  }
+}
+
+.referenceWrapper {
+  display: grid;
+  grid-template-areas: "head"
+    "main";
+  grid-template-rows: $unit-8 auto;
+  grid-template-columns: auto;
+  background-color: $color-gray-100;
+
+  main {
+    width: 100vw;
+    height: calc(100vh - #{$unit-8});
+    overflow: auto;
+    grid-area: main;
+    background-color: white;
+  }
+}
+
+.pageHeader {
+  margin-top: 0;
+  display: block;
+  padding: $unit-8 $unit-8;
+  background-color: $color-gray-100;
+  margin-bottom: 0;
+  max-width: none;
+
+  .pageDescription {
+    display: block;
+    margin-top: $unit-3;
+    font-size: $font-size-large;
+    color: $color-gray-700;
+  }
+
+  &.sectionHeader {
+    background-color: $color-primary-dark;
+    padding: $unit-20 $unit-8 $unit-20;
+
+    $bg-color: $color-primary-dark;
+    $dot-color: $color-primary-medium;
+    $dot-size: 2px;
+    $dot-space: 22px;
+
+  	background:
+  		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+  		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+  		$dot-color;
+  	background-size: $dot-space $dot-space;
+
+    h1 {
+      color: white;
+    }
+  }
+
+  .tags {
+    float: right;
+    & > span {
+      margin-right: $unit-half;
+    }
+  }
+}
+
+.content {
+  padding: $unit-6 $unit-8;
+}
+
+.tabs {
+  display: flex;
+  padding: 0;
+  margin: ($unit-4 * -1) 0 0;
+  list-style-type: none;
+  background-color: $color-gray-100;
+  padding: 0 $unit-7;
+
+  li {
+    margin-right: $unit-2;
+
+    a {
+      color: $color-gray-1000;
+      text-decoration: none;
+      padding: $unit-2;
+      border-radius: $border-radius-default $border-radius-default 0 0;
+      border-bottom: 3px solid transparent;
+      color: $color-gray-700;
+      display: inline-block;
+      transition: $transition-natural;
+
+      &:hover {
+        border-bottom: 3px solid $color-gray-300;
+        color: $color-gray-1000;
+      }
+
+      &.tabsActive {
+        border-bottom: 3px solid $color-primary-selection;
+        color: $color-gray-1000;
+      }
+    }
+  }
+}
+
+.websiteH2 {
+  margin-top: $unit-6;
+  margin-bottom: $unit-3;
+}
+
+.websiteH3 {
+  margin-top: $unit-5;
+  margin-bottom: $unit-2;
+}

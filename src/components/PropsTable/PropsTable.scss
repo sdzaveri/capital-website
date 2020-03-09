@@ -1,0 +1,26 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+h3 + .propsTable {
+  margin-top: $unit-3;
+}
+
+.defaultCode:empty {
+  background-color: transparent;
+
+  &:before {
+    content: "-";
+    color: $color-gray-400;
+  }
+}
+
+tr.private {
+  td {
+    color: $color-gray-700;
+    background-color: transparent;
+  }
+
+  td code {
+    color: $color-gray-500;
+    background-color: transparent;
+  }
+}

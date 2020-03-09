@@ -1,0 +1,42 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+.toc {
+  list-style-type: none;
+  padding-left: 0;
+  padding: 0 $unit-3;
+  position: absolute;
+  right: $unit-4;
+  width: $unit-30;
+  border-left: $border-gray-300;
+  padding-left: $unit-3;
+  display: none;
+
+  @media #{$mq-xlarge-up} {
+    display: block;
+  }
+
+  a.section {
+    font-size: $font-size-default;
+    padding: $unit-2 0 $unit-half;
+    display: block;
+    font-weight: $font-weight-medium;
+    color: $color-gray-700;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary-selection;
+    }
+  }
+
+  a.subsection {
+    font-size: $font-size-small;
+    padding: $unit-quarter 0;
+    color: $color-gray-700;
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary-selection;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+// Remove later
+$font-weight-book: 300;
+$font-weight-medium: 500;
+
+.header {
+  background-color: $color-primary-brand;
+  color: white;
+  padding: 0 $unit-3;
+  display: flex;
+  align-items: center;
+  grid-area: head;
+
+  .siteTitle {
+    color: white;
+    text-decoration: none;
+    margin-right: $unit-3;
+    font-size: $font-size-large;
+  }
+
+  nav {
+    flex-grow: 1;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+
+      li {
+        list-style-type: none;
+        margin: 0 $unit-1;
+
+        a {
+          color: rgba(255,255,255,.8);
+          line-height: calc(#{$unit-8} - 3px);
+          padding: 0 $unit-2;
+          text-decoration: none;
+          border-bottom: 2px solid transparent;
+          height: $unit-8;
+          display: block;
+          transition: $transition-natural;
+
+          &:hover,
+          &:active,
+          &:focus {
+            border-bottom: 3px solid white;
+            color: white;
+          }
+        }
+
+        &.activeTab {
+          a {
+            color: white;
+            border-bottom: 3px solid white;
+          }
+        }
+
+        &.button {
+          justify-self: flex-end;
+          margin-left: auto;
+
+          a {
+            border-radius: $border-radius-default;
+            display: inline-block;
+            height: $unit-6;
+            line-height: $unit-6;
+            margin: $unit-1 0 $unit-1 $unit-1;
+            border: 0;
+            font-size: $font-size-small;
+
+            &.activeTab,
+            &:hover {
+              border: 0;
+              background-color: $color-primary-selection;
+            }
+          }
+        }
+      }
+    }
+  }
+}

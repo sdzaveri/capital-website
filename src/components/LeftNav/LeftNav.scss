@@ -1,0 +1,118 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+// Remove later
+$font-weight-book: 300;
+$font-weight-medium: 500;
+
+$leftNav-width: $unit-1 * 35;
+
+.secondaryNav {
+  width: $leftNav-width;
+  background-color: $color-gray-1000;
+  padding: $unit-3 0;
+  grid-area: nav;
+  height: calc(100vh - #{$unit-8});
+  overflow-y: auto;
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    overflow-x: visible;
+
+    li {
+      list-style-type: none;
+      display: block;
+      position: relative;
+      width: $leftNav-width;
+
+      a {
+        color: rgba(255, 255, 255, .75);
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        padding: $unit-1 $unit-3;
+        transition: $transition-natural;
+
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: black;
+          color: white;
+        }
+
+        &.activePage {
+          font-weight: $font-weight-medium;
+          color: $color-primary-focus;
+          background-color: black;
+        }
+      }
+
+      // .navTooltip {
+      //   color: white;
+      //   background-color: $color-gray-1000;
+      //   font-size: $font-size-small;
+      //   padding: $unit-1;
+      //   position: absolute;
+      //   top: 50%;
+      //   left: $leftNav-width;
+      //   margin-left: $unit-1;
+      //   z-index: $z-index-flash;
+      //   width: $leftNav-width;
+      //   transform: translateY(-50%);
+      //   display: none;
+      //
+      //   &:before {
+      //     content: " ";
+      //     position: absolute;
+      //     top: 50%;
+      //     right: 100%; /* To the right of the tooltip */
+      //     margin-top: -1*$unit-1;
+      //     border-width: $unit-1;
+      //     border-style: solid;
+      //     border-color: transparent $color-gray-1000 transparent transparent;
+      //   }
+      // }
+      //
+      // &:hover {
+      //   .navTooltip {
+      //     display: block;
+      //   }
+      // }
+    }
+  }
+}
+
+.section {
+  color: rgba(255,255,255,.5);
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: $font-weight-regular;
+  margin-top: $unit-2;
+  font-size: $font-size-default;
+  letter-spacing: $letter-spacing-cap;
+  padding: $unit-1 $unit-3;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.package {
+  color: $color-white;
+  font-weight: $font-weight-medium;
+  margin-top: $unit-3;
+  font-size: $font-size-large;
+  padding: $unit-3 $unit-3 0;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  margin-bottom: $unit-2;
+
+
+  &:first-child {
+    margin-top: 0;
+    border-top: 0;
+    padding-top: 0;
+  }
+}

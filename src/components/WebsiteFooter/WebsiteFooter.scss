@@ -1,0 +1,8 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+.footer {
+  margin: $unit-4 $unit-8;
+  padding: $unit-2 0 0;
+  border-top: $border-gray-300;
+  color: $color-gray-700;
+}

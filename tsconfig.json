@@ -1,0 +1,19 @@
+{
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext"
+  },
+  "extends": "./node_modules/.bin/opengov-tsconfig.library.json",
+  "include": ["./global.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "node_modules",
+    "packages/*/node_modules",
+    "**/*-test.tsx",
+    "**/*-test.ts",
+    "**/__steps__/*.ts",
+    "**/__steps__/*.tsx",
+    "**/*-mocks.ts"
+  ]
+}

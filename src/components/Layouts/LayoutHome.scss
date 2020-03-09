@@ -1,0 +1,103 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+.homeIcon {
+  height: $unit-8;
+  width: auto;
+  margin-bottom: $unit-3;
+}
+
+.homeTitle {
+  background-color: $color-primary-dark;
+  color: white;
+  padding: $unit-20 $unit-8 $unit-20;
+  line-height: $line-height-tight;
+  font-weight: 500;
+
+  $bg-color: $color-primary-dark;
+  $dot-color: $color-primary-medium;
+  $dot-size: 2px;
+  $dot-space: 22px;
+
+	background:
+		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+		$dot-color;
+	background-size: $dot-space $dot-space;
+
+  h1 {
+    color: white;
+  }
+}
+
+.description {
+  max-width: 700px;
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-book;
+  display: block;
+  line-height: $line-height-default;
+  margin-bottom: $unit-2;
+  text-shadow: $box-shadow-hard;
+}
+
+.homeGrid {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: $unit-4;
+  position: relative;
+  margin-top: -100px;
+  margin-bottom: $unit-4;
+}
+
+.homeButton {
+  padding: $unit-3;
+  transition: $transition-natural;
+  color: $color-gray-1000;
+  background-color: $color-white;
+  text-align: center;
+
+  & > div {
+    align-self: center;
+  }
+
+  h3 {
+    margin-bottom: $unit-1;
+    margin-top: $unit-3;
+  }
+
+  .homeButtonIcon {
+    display: block;
+    background-color: $color-primary-medium;
+    padding: $unit-3 0;
+    text-align: center;
+    margin: -24px -24px 0 -24px;
+    transition: $transition-natural;
+
+    img {
+      height: $unit-8;
+      width: $unit-8;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $box-shadow-hard-hover;
+    text-decoration: none;
+    color: $color-gray-1000;
+    transform: translate(0,-2px);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+    .homeButtonIcon {
+      background-color: $color-primary-brand;
+    }
+  }
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $unit-3;
+  max-width: 1300px;
+}

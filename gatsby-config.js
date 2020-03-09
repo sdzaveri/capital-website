@@ -57,6 +57,7 @@ module.exports = {
           default: require.resolve("./src/components/Layouts/LayoutMDX.tsx"),
         },
       },
-    }
+    },
+    `gatsby-plugin-netlify-cms`
   ]
 };

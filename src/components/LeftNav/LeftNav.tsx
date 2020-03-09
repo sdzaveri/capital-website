@@ -49,6 +49,8 @@ const LeftNav = ({ activeTab = 'overview' }) => {
     if (section.links) {
       navigationMenuJSX.push(renderNavItems(section));
     }
+
+    return;
   });
 
   return (

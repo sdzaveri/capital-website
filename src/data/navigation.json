@@ -67,6 +67,15 @@
   ],
   "patterns": [
     {
+      "title": "Test",
+      "links": [
+        {
+          "title": "Testing",
+          "url": "/patterns/test"
+        }
+      ]
+    },
+    {
       "title": "Visuals",
       "links": [
         {

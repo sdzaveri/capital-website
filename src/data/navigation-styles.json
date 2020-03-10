@@ -1,0 +1,88 @@
+{
+  "sections": [
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "title": "Tokens",
+          "url": "/styles/tokens"
+        },
+        {
+          "title": "Mixins",
+          "url": "/styles/mixins"
+        },
+        {
+          "title": "Stylesheet",
+          "url": "/styles/stylesheet"
+        }
+      ]
+    },
+    {
+      "title": "Visuals",
+      "links": [
+        {
+          "title": "Color",
+          "url": "/patterns/color"
+        },
+        {
+          "title": "Typography",
+          "url": "/patterns/typography"
+        },
+        {
+          "title": "Iconography",
+          "url": "/patterns/iconography"
+        },
+        {
+          "title": "Illustration",
+          "url": "/patterns/illustration"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "links": [
+        {
+          "title": "Composition and Information Architecture",
+          "url": "/patterns/layout/composition"
+        },
+        {
+          "title": "Hierarchy",
+          "url": "/patterns/layout/hierarchy"
+        },
+        {
+          "title": "Spacing & Grids",
+          "url": "/patterns/layouts/spacinggrid"
+        },
+        {
+          "title": "Alignment",
+          "url": "/patterns/layouts/alignment"
+        },
+        {
+          "title": "Levels",
+          "url": "/patterns/layouts/levels"
+        }
+      ]
+    },
+    {
+      "title": "Animation / Motion",
+      "links": []
+    },
+    {
+      "title": "Content",
+      "links": [
+        {
+          "title": "Vocabulary",
+          "url": "/patterns/content/vocabulary"
+        }
+      ]
+    },
+    {
+      "title": "Data Visalization",
+      "links": []
+    },
+    {
+      "title": "Accessibility",
+      "links": []
+    }
+  ]
+}

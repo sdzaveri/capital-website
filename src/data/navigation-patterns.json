@@ -1,0 +1,21 @@
+{
+  "sections": [
+    {
+      "title": "UI Patterns",
+      "links": [
+        {
+          "title": "Tokens",
+          "url": "/styles/tokens"
+        },
+        {
+          "title": "Mixins",
+          "url": "/styles/mixins"
+        },
+        {
+          "title": "Stylesheet",
+          "url": "/styles/stylesheet"
+        }
+      ]
+    }
+  ]
+}

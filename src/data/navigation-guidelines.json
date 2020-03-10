@@ -1,0 +1,13 @@
+{
+  "sections": [
+    {
+      "title": "Accessibility",
+      "links": [
+        {
+          "title": "Tokens",
+          "url": "/styles/tokens"
+        }
+      ]
+    }
+  ]
+}

@@ -28,13 +28,13 @@ collections:
         label: "Overview Navigation"
         name: "overviewnav"
         fields:
-          - name: section
+          - name: sections
             label: Sections
             widget: list
             fields:
             - {name: title}
-            - name: Links
-              label: links
+            - name: links
+              label: Links
               widget: list
               fields:
                 - {name: title}

@@ -65,7 +65,24 @@
       ]
     }
   ],
-  "patterns": [
+  "styles": [
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "title": "Tokens",
+          "url": "/styles/tokens"
+        },
+        {
+          "title": "Mixins",
+          "url": "/styles/mixins"
+        },
+        {
+          "title": "Stylesheet",
+          "url": "/styles/stylesheet"
+        }
+      ]
+    },
     {
       "title": "Visuals",
       "links": [
@@ -294,6 +311,44 @@
           "component": "stackedbarchart"
         }
       ]
+    }
+  ],
+  "patterns": [
+    {
+      "title": "Content",
+      "links": [
+        {
+          "title": "Vocabulary",
+          "url": "/patterns/content/vocabulary"
+        }
+      ]
+    },
+    {
+      "title": "Data Visalization",
+      "links": []
+    },
+    {
+      "title": "Accessibility",
+      "links": []
+    }
+  ],
+  "guidelines": [
+    {
+      "title": "Content",
+      "links": [
+        {
+          "title": "Vocabulary",
+          "url": "/patterns/content/vocabulary"
+        }
+      ]
+    },
+    {
+      "title": "Data Visalization",
+      "links": []
+    },
+    {
+      "title": "Accessibility",
+      "links": []
     }
   ]
 }

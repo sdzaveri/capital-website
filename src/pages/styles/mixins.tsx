@@ -3,9 +3,9 @@
 import { Header } from '@opengov/component-library/capital';
 import React from 'react';
 
-import { ToolsTable } from '../components';
-import LayoutReference from '../components/Layouts/LayoutReference';
-import tocStyles from '../components/Layouts/TOC.scss';
+import { ToolsTable } from '../../components';
+import LayoutReference from '../../components/Layouts/LayoutReference';
+import tocStyles from '../../components/Layouts/TOC.scss';
 
 export const MixinTOC = props => (
   <ul className={tocStyles.toc}>

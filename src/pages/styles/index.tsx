@@ -5,7 +5,7 @@ import React from 'react';
 import LayoutSection from '../../components/Layouts/LayoutSection';
 
 export default () => (
-  <LayoutSection activeTab="patterns" title="Patterns">
+  <LayoutSection activeTab="styles" title="Styles">
     <p>This section is still under construction.</p>
     <h2>Visuals</h2>
     Descrription about this section

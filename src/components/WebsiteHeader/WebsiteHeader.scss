@@ -20,7 +20,7 @@ $font-weight-medium: 500;
   }
 
   nav {
-    flex-grow: 1;
+    margin-left: auto;
 
     ul {
       list-style-type: none;
@@ -53,27 +53,6 @@ $font-weight-medium: 500;
           a {
             color: white;
             border-bottom: 3px solid white;
-          }
-        }
-
-        &.button {
-          justify-self: flex-end;
-          margin-left: auto;
-
-          a {
-            border-radius: $border-radius-default;
-            display: inline-block;
-            height: $unit-6;
-            line-height: $unit-6;
-            margin: $unit-1 0 $unit-1 $unit-1;
-            border: 0;
-            font-size: $font-size-small;
-
-            &.activeTab,
-            &:hover {
-              border: 0;
-              background-color: $color-primary-selection;
-            }
           }
         }
       }

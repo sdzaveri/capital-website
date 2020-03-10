@@ -14,15 +14,17 @@ const WebsiteHeader = props => (
         <li className={props.activeTab === 'overview' ? styles.activeTab : null}>
           <Link to="/overview">Overview</Link>
         </li>
-        <li className={props.activeTab === 'patterns' ? styles.activeTab : null}>
-          <Link to="/patterns">Patterns & Styles</Link>
+        <li className={props.activeTab === 'styles' ? styles.activeTab : null}>
+          <Link to="/styles">Styles</Link>
         </li>
         <li className={props.activeTab === 'components' ? styles.activeTab : null}>
           <Link to="/components">Components</Link>
         </li>
-        <li className={styles.button}>
-          <Link activeClassName={styles.activeTab} to="/tokens">Tokens</Link>
-          <Link activeClassName={styles.activeTab} to="/changelog">Changelogs</Link>
+        <li className={props.activeTab === 'patterns' ? styles.activeTab : null}>
+          <Link to="/patterns">Patterns</Link>
+        </li>
+        <li className={props.activeTab === 'guidelines' ? styles.activeTab : null}>
+          <Link to="/guidelines">Guidelines</Link>
         </li>
       </ul>
     </nav>

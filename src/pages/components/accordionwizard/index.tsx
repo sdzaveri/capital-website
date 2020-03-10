@@ -37,7 +37,7 @@ export default () => (
           label="Step One"
           summary="Example description"
         >
-          my child
+          Step 1 example
         </AccordionWizard.Step>
         <AccordionWizard.Step
           buttonDisabled={false}
@@ -45,7 +45,7 @@ export default () => (
           label="Step Two"
           summary="Example description"
         >
-          my child
+          Step 2 example
         </AccordionWizard.Step>
         <AccordionWizard.Step
           buttonDisabled={false}
@@ -53,7 +53,7 @@ export default () => (
           label="Step Three"
           summary="Example description"
         >
-          Example
+          Step 3 example
         </AccordionWizard.Step>
       </AccordionWizard>
     </ComponentExample>

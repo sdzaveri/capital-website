@@ -8,6 +8,43 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
+  - name: "navigation"
+    label: "Navigation"
+    extension: "json"
+    format: "json"
+    folder: src/data/navigation
+    editor:
+       preview: false
+    fields:
+      - name: sections
+        label: Sections
+        widget: list
+        fields:
+        - {name: title}
+        - name: links
+          label: Links
+          widget: list
+          fields:
+            - {name: title}
+            - {name: url}
+  - name: overview
+    label: Overview
+    folder: src/pages/overview
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: activeTab, label: Active Tab }
+      - { name: body, label: Body, widget: markdown }
+  - name: styles
+    label: Styles
+    folder: src/pages/styles
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: activeTab, label: Active Tab }
+      - { name: body, label: Body, widget: markdown }
   - name: patterns
     label: Patterns
     folder: src/pages/patterns
@@ -17,52 +54,21 @@ collections:
       - { name: description, label: Description }
       - { name: activeTab, label: Active Tab }
       - { name: body, label: Body, widget: markdown }
-  - name: "navigation"
-    label: "Navigation"
-    extension: "json"
-    format: "json"
-    editor:
-       preview: false
-    files:
-      - file: "src/data/navigation-overview.json"
-        label: "Overview Navigation"
-        name: "overviewnav"
-        fields:
-          - name: sections
-            label: Sections
-            widget: list
-            fields:
-            - {name: title}
-            - name: links
-              label: Links
-              widget: list
-              fields:
-                - {name: title}
-                - {name: url}
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "src/pages/overview/principles.md"
-        label: "Principles"
-        name: "principles"
-        fields:
-          - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: activeTab, label: Active Tab }
-          - { name: body, label: Body, widget: markdown }
-      - file: "src/pages/overview/contribution-developers.md"
-        label: "Developer Contribution Guidelines"
-        name: "devcontributionguidelines"
-        fields:
-          - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: activeTab, label: Active Tab }
-          - { name: body, label: Body, widget: markdown }
-      - file: "src/pages/patterns/visuals/iconography.md"
-        label: "Iconography"
-        name: "icons"
-        fields:
-          - { name: title, label: Title }
-          - { name: description, label: Description }
-          - { name: activeTab, label: Active Tab }
-          - { name: body, label: Body, widget: markdown }
+  - name: components
+    label: Components
+    folder: src/pages/components
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: activeTab, label: Active Tab }
+      - { name: body, label: Body, widget: markdown }
+  - name: guidelines
+    label: Guidelines
+    folder: src/pages/guidelines
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Title }
+      - { name: description, label: Description }
+      - { name: activeTab, label: Active Tab }
+      - { name: body, label: Body, widget: markdown }

@@ -1,0 +1,213 @@
+@import url(../../../node_modules/normalize.css/normalize.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Black.woff");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Bold.woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Book.woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Extra-Light.woff");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Light.woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Medium.woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Regular.woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton-Sans";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Thin.woff");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Black.woff");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Bold.woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Book.woff");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Extra-Light.woff");
+  font-weight: 200;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Light.woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Medium.woff");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Regular.woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Benton Sans Condensed";
+  src: url("../../../node_modules/@opengov/capital-style/fonts/Benton-Sans-Condensed-Thin.woff");
+  font-weight: 100;
+  font-style: normal; }
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+:focus {
+  outline: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+html {
+  min-height: 100%; }
+
+body {
+  font-family: "Benton Sans", Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0; }
+
+b,
+strong {
+  font-weight: 700; }
+
+p,
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 900px; }
+
+h2,
+h3,
+h4 {
+  font-family: "Benton Sans", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #131517;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 48px;
+  margin-bottom: 24px; }
+  h2:first-child {
+    margin-top: 0; }
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px; }
+
+h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px; }
+
+p {
+  margin: 8px 0; }
+
+:global .iframeContainer {
+  height: calc(100vh - 60px);
+  width: 100%; }
+:global .websiteH2 {
+  margin-top: 48px;
+  margin-bottom: 24px; }
+  :global .websiteH2:first-child {
+    margin-top: 0; }
+:global .websiteH3 {
+  margin-top: 40px;
+  margin-bottom: 16px; }
+
+tt,
+code {
+  background-color: #eff2f5;
+  border-radius: 3px;
+  font-family: "Roboto Mono", "Droid Sans Mono", "Liberation Mono", Menlo, Courier, monospace;
+  padding: 0.2em 0.4em;
+  font-size: 0.875rem; }
+
+table {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  line-height: 1.4em; }
+  table thead {
+    background-color: #eff2f5; }
+    table thead th {
+      background-color: #eff2f5;
+      font-weight: 600;
+      font-family: "Benton Sans Condensed", Arial Narrow, sans-serif;
+      text-align: left;
+      padding: 16px 16px;
+      white-space: nowrap;
+      color: #616365; }
+  table tbody td {
+    border-top: 1px solid #ced2d6;
+    padding: 16px 16px; }
+
+a {
+  color: #1f76d8;
+  text-decoration: none; }
+  a:hover, a:active, a:focus {
+    color: #1f76d8;
+    text-decoration: underline; }
+
+.columns {
+  display: grid;
+  grid-gap: 16px; }
+
+.columns-2 {
+  grid-template-columns: 1fr 1fr; }
+
+.columns-3 {
+  grid-template-columns: 1fr 1fr 1fr; }
+
+pre {
+  white-space: pre-wrap !important; }
+  pre code {
+    white-space: pre-wrap !important; }
+
+/*# sourceMappingURL=base.css.map */

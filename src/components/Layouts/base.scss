@@ -108,11 +108,11 @@
 }
 
 
-@import '~@opengov/capital-style/scss/tokens';
+@import '../../../node_modules/@opengov/capital-style/scss/tokens';
 
 // --- Copied from Capital-Style @TODO Fix import
 
-@import "~normalize.css/normalize";
+@import "../../../node_modules/normalize.css/normalize.css";
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 

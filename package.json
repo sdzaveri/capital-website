@@ -45,6 +45,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "sass": "sass src/components/Layouts/base.scss static/base.css",
     "build": "gatsby build",
     "clean": "gatsby clean",
     "develop": "gatsby develop",

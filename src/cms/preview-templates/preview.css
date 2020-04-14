@@ -1,0 +1,30 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.pageHeader {
+  margin-top: 0;
+  display: block;
+  padding: 24px;
+  background-color: #EFF2F5;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.pageDescription {
+  display: block;
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #616365;
+}
+
+.content {
+  padding: 24px;
+}

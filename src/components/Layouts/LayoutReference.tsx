@@ -10,7 +10,7 @@ import { WebsiteHeader } from '../WebsiteHeader';
 
 import styles from './Layout.scss';
 
-const LayoutHome = props => (
+const LayoutReference = props => (
   <div className={styles.referenceWrapper}>
     <WebsiteHeader />
     <main>
@@ -41,8 +41,8 @@ const LayoutHome = props => (
   </div>
 );
 
-LayoutHome.propTypes = {
+LayoutReference.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default LayoutHome;
+export default LayoutReference;

@@ -13,7 +13,7 @@ import styles from './Layout.scss';
 import homeStyles from './LayoutHome.scss';
 
 const LayoutHome = props => (
-  <div className={styles.homeWrapper}>
+  <div className={styles.homeWrapper} title="Capital Design System, made by OpenGov">
     <WebsiteHeader />
     <main>
       <div className={homeStyles.homeTitle}>

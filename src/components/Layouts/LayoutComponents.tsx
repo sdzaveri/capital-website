@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 // import { Link } from 'gatsby';
 
-import components from '../../data/navigation/components.json';
+import components from '../../data/components.json';
 
 import './base.scss';
 import styles from './Layout.scss';

@@ -12,9 +12,7 @@ import styles from './LeftNav.scss';
 const navigation = {
   "overview": navigationOverview,
   "styles": navigationStyles,
-  "components": {
-    "links": navigationComponents
-  },
+  "components": navigationComponents,
   "patterns": navigationPatterns
 };
 

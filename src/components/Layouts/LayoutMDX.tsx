@@ -9,7 +9,7 @@ import LayoutBase from './LayoutBase';
 import styles from './Layout.scss';
 
 const LayoutMDX = props => (
-  <LayoutBase activeTab={props.pageContext.frontmatter.activeTab}>
+  <LayoutBase activeTab={props.pageContext.frontmatter.activeTab} title={props.title}>
     <div className={styles.pageHeader}>
       <Header variant="hero">{props.pageContext.frontmatter.title}</Header>
       <p className={styles.pageDescription}>{props.pageContext.frontmatter.description && props.pageContext.frontmatter.description}</p>

@@ -9,7 +9,7 @@ import LayoutBase from './LayoutBase';
 import styles from './Layout.scss';
 
 const LayoutDefault = props => (
-  <LayoutBase activeTab={props.activeTab}>
+  <LayoutBase activeTab={props.activeTab} title={props.title}>
     <div className={styles.pageHeader}>
       <Header variant="hero">{props.title}</Header>
       <p className={styles.pageDescription}>{props.description && props.description}</p>

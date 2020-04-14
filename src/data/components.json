@@ -1,0 +1,275 @@
+{
+  "accordionwizard": {
+    "title": "Accordion Wizard",
+    "url": "/components/accordionwizard/",
+    "description": "Accordion wizards are used to display a process within a modal or restricted horizontal space.",
+    "type": "organism",
+    "tags": ["flow"]
+  },
+  "axis": {
+    "title": "Axis",
+    "url": "/components/axis/",
+    "description": "Axes are used to show an axis bar and tick marks in a visualization.",
+    "type": "atom",
+    "tags": ["visualization"]
+  },
+  "badge": {
+    "title": "Badge",
+    "url": "/components/badge/",
+    "description": "Badges are used to convey a status or data.",
+    "type": "atom",
+    "tags": ["status"]
+  },
+  "blocklist": {
+    "title": "Block List",
+    "url": "/components/blocklist/",
+    "description": "Block lists are used to create a navigational list of objects.",
+    "type": "molecule",
+    "tags": ["controls"]
+  },
+  "breadcrumb": {
+    "title": "Breadcrumb",
+    "url": "/components/breadcrumb/",
+    "description": "Breadcrumbs are used in page headers to indicate the user's current location.",
+    "type": "atom",
+    "tags": ["navigation"]
+  },
+  "button": {
+    "title": "Button",
+    "url": "/components/button/",
+    "description": "Buttons are used to initiate an action or open a new page.",
+    "type": "atom",
+    "tags": ["action"]
+  },
+  "buttongroup": {
+    "title": "Button Group",
+    "url": "/components/buttongroup/",
+    "description": "Button groups are used to visually connect related buttons.",
+    "type": "molecule",
+    "tags": ["action"]
+  },
+  "buttontoggle": {
+    "title": "Button Toggle",
+    "url": "/components/buttontoggle/",
+    "description": "Button toggles are used to switch between options or actions.",
+    "type": "molecule",
+    "tags": ["action"]
+  },
+  "card": {
+    "title": "Card",
+    "url": "/components/card/",
+    "description": "Cards are clickable blocks that can represent an object or option with a title and description.",
+    "type": "molecule",
+    "tags": ["control"]
+  },
+  "charactercounter": {
+    "title": "Character Counter",
+    "url": "/components/charactercounter/",
+    "description": "Character counters are used to show character limits within an input field.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "checkbox": {
+    "title": "Checkbox",
+    "url": "/components/checkbox/",
+    "description": "Checkboxes are used to gather boolean data from a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "description": {
+    "title": "Description",
+    "url": "/components/description/",
+    "description": "Descriptions are used to provide additional information about an object with its title.",
+    "type": "atom",
+    "tags": ["text", "visual"]
+  },
+  "dialog": {
+    "title": "Dialog",
+    "url": "/components/dialog/",
+    "description": "Dialogs are status-based popups that require the user to confirm an action before continuing.",
+    "type": "molecule",
+    "tags": ["status"]
+  },
+  "divider": {
+    "title": "Divider",
+    "url": "/components/divider/",
+    "description": "Dividers are used to create visual separation between objects.",
+    "type": "atom",
+    "tags": ["visual"]
+  },
+  "error": {
+    "title": "Error",
+    "url": "/components/error/",
+    "description": "Errors are used to provide error messaging paired with form fields.",
+    "type": "atom",
+    "tags": ["text", "visual"]
+  },
+  "fixedtable": {
+    "title": "Fixed Table",
+    "url": "/components/fixedtable/",
+    "description": "Fixed tables are...",
+    "type": "organism",
+    "tags": ["data"]
+  },
+  "formfield": {
+    "title": "Form Field",
+    "url": "/components/formfield/",
+    "description": "Form fields are used to layout the required atoms for each input within a form.",
+    "type": "molecule",
+    "tags": ["form", "layout"]
+  },
+  "header": {
+    "title": "Header",
+    "url": "/components/header/",
+    "description": "Headers are used to create headings within the page using html header tags.",
+    "type": "atom",
+    "tags": ["text", "visual"]
+  },
+  "icon": {
+    "title": "Icon",
+    "url": "/components/icon/",
+    "description": "Icons are used to create a visual representation of an object or action.",
+    "type": "atom",
+    "tags": ["visual"]
+  },
+  "input": {
+    "title": "Input",
+    "url": "/components/input/",
+    "description": "Inputs are used to gather text, numerical or temporal data from a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "label": {
+    "title": "Label",
+    "url": "/components/label/",
+    "description": "Labels are used to identify data, form fields or groups of information.",
+    "type": "atom",
+    "tags": ["text", "visual"]
+  },
+  "legend": {
+    "title": "Legend",
+    "url": "/components/legend/",
+    "description": "Legends are used to display and control categories within a chart.",
+    "type": "visualization",
+    "tags": ["controls"]
+  },
+  "linechart": {
+    "title": "Line Chart",
+    "url": "/components/linechart/",
+    "description": "Line Charts are visualizations that display data in line form, showing each category as a different line.",
+    "type": "visualization",
+    "tags": []
+  },
+  "link": {
+    "title": "Link",
+    "url": "/components/link/",
+    "description": "Links are used to navigate a user to another page.",
+    "type": "atom",
+    "tags": ["action"]
+  },
+  "loading": {
+    "title": "Loading Indicator",
+    "url": "/components/loading/",
+    "description": "Loading indicators are used to indicate loading state to a user.",
+    "type": "atom",
+    "tags": ["state"]
+  },
+  "modal": {
+    "title": "Modal",
+    "url": "/components/modal/",
+    "description": "Modals are used to support complex user actions within context.",
+    "type": "organism",
+    "tags": ["flow"]
+  },
+  "listtable": {
+    "title": "List Table",
+    "url": "/components/listtable/",
+    "description": "List Tables are used to display a navigational list of objects.",
+    "type": "molecule",
+    "tags": ["controls"]
+  },
+  "pill": {
+    "title": "Pill",
+    "url": "/components/pill/",
+    "description": "Pills are used to represent a removable value the user has chosen.",
+    "type": "atom",
+    "tags": ["action"]
+  },
+  "radiobutton": {
+    "title": "Radio Button",
+    "url": "/components/radiobutton/",
+    "description": "Radio buttons are used to gather boolean data from a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "radiogroup": {
+    "title": "Radio Group",
+    "url": "/components/radiogroup/",
+    "description": "Radio Groups are used to provide a layout for multiple radio buttons.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "select": {
+    "title": "Select",
+    "url": "/components/select/",
+    "description": "Selects are used to provide a list of options to a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "switch": {
+    "title": "Switch",
+    "url": "/components/switch/",
+    "description": "Switches are used to gather boolean data from a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "stackedbarchart": {
+    "title": "Stacked Bar Chart",
+    "url": "/components/stackedbarchart/",
+    "description": "Stacked Bar Charts are visualizations that diplay data in bar form, stacking categories.",
+    "type": "visualization",
+    "tags": []
+  },
+  "table": {
+    "title": "Table",
+    "url": "/components/table/",
+    "description": "Tables are used to display complex sets of data.",
+    "type": "organism",
+    "tags": ["data"]
+  },
+  "tabs": {
+    "title": "Tabs",
+    "url": "/components/tabs/",
+    "description": "Tabs are used to navigate between content blocks on a page.",
+    "type": "molecule",
+    "tags": ["controls"]
+  },
+  "text": {
+    "title": "Text",
+    "url": "/components/text/",
+    "description": "Text are used to format content on a page.",
+    "type": "atom",
+    "tags": ["visual"]
+  },
+  "textarea": {
+    "title": "Textarea",
+    "url": "/components/textarea/",
+    "description": "Textareas are used to gather text information from a user.",
+    "type": "atom",
+    "tags": ["form"]
+  },
+  "charttooltip": {
+    "title": "Chart Tooltip",
+    "url": "/components/charttooltip/",
+    "description": "Chart Tooltips are used to display additional information within a chart.",
+    "type": "molecule",
+    "tags": []
+  },
+  "wizardlist": {
+    "title": "Wizard List",
+    "url": "/components/wizardlist/",
+    "description": "Wizard lists are used to display steps and status within a wizard flow.",
+    "type": "molecule",
+    "tags": ["controls"]
+  }
+}

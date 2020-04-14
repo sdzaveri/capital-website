@@ -8,7 +8,7 @@ import styles from './Layout.scss';
 import LayoutBase from './LayoutBase';
 
 const LayoutSection = props => (
-  <LayoutBase activeTab={props.activeTab}>
+  <LayoutBase activeTab={props.activeTab} title={props.title}>
     <div className={`${styles.pageHeader} ${styles.sectionHeader}`}>
       <Header variant="hero">{props.title}</Header>
     </div>

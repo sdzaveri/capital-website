@@ -1,0 +1,42 @@
+@import '~@opengov/capital-style/scss/tokens';
+
+.toolbar {
+  .letterButton {
+    padding: $unit-quarter $unit-1;
+    background-color: $color-gray-200;
+    display: inline-block;
+    border-radius: $border-radius-default;
+    margin-right: $unit-half;
+  }
+}
+
+.glossary {
+  margin-top: $unit-3;
+  display: block;
+
+  .letterHeader {
+    font-size: 0;
+  }
+
+  .term {
+    padding: $unit-3 0;
+    margin-top: $unit-1;
+  }
+
+  dt {
+    font-size: $font-size-xlarge;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0;
+  }
+
+  dd {
+    margin: 0;
+    font-size: $font-size-small;
+    color: $color-gray-700;
+
+    .definition {
+      font-size: $font-size-large;
+      color: $color-gray-1000;
+    }
+  }
+}

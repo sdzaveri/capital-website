@@ -1,0 +1,74 @@
+{
+  "terms": [
+    {
+      "id": "component",
+      "term": "Component",
+      "definition": "...",
+      "tags": ["components"],
+      "relatedTerms": ["component-library"],
+      "searchTerms": [],
+      "relatedLinks": [
+        {
+          "url": "",
+          "name": "Storybook"
+        }
+      ]
+    },
+    {
+      "id": "component-library",
+      "term": "Component Library",
+      "definition": "...",
+      "tags": ["components"],
+      "relatedTerms": ["component"],
+      "searchTerms": [],
+      "relatedLinks": [
+        {
+          "url": "",
+          "name": "Storybook"
+        }
+      ]
+    },
+    {
+      "id": "pattern",
+      "term": "Pattern",
+      "definition": "...",
+      "tags": ["styles"],
+      "relatedTerms": ["stylesheet"],
+      "searchTerms": [],
+      "relatedLinks": [
+        {
+          "url": "",
+          "name": "Storybook"
+        }
+      ]
+    },
+    {
+      "id": "storybook",
+      "term": "Storybook",
+      "definition": "A tool used by engineers to develop and test components.",
+      "tags": ["documentation"],
+      "relatedTerms": ["component", "component-library"],
+      "searchTerms": [],
+      "relatedLinks": [
+        {
+          "url": "",
+          "name": "Storybook"
+        }
+      ]
+    },
+    {
+      "id": "token",
+      "term": "Token",
+      "definition": "...",
+      "tags": ["styles"],
+      "relatedTerms": ["stylesheet"],
+      "searchTerms": [],
+      "relatedLinks": [
+        {
+          "url": "",
+          "name": "Storybook"
+        }
+      ]
+    }
+  ]
+}

@@ -2,10 +2,21 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import components from '../../data/components.json';
-import navigation from '../../data/navigation.json';
+import navigationOverview from '../../data/navigation/overview.json';
+import navigationStyles from '../../data/navigation/styles.json';
+import navigationComponents from '../../data/navigation/components.json';
+import navigationPatterns from '../../data/navigation/patterns.json';
 
 import styles from './LeftNav.scss';
+
+const navigation = {
+  "overview": navigationOverview,
+  "styles": navigationStyles,
+  "components": {
+    "links": navigationComponents
+  },
+  "patterns": navigationPatterns
+};
 
 const renderNavItems = section => {
   return section.links.map(item => {
@@ -31,7 +42,7 @@ const renderNavItems = section => {
 
 const LeftNav = ({ activeTab = 'overview' }) => {
   const navigationMenuJSX = [];
-  navigation[activeTab].map(section => {
+  navigation[activeTab].sections.map(section => {
     if (section.package) {
       navigationMenuJSX.push(
         <li key={section.package} className={styles.package}>

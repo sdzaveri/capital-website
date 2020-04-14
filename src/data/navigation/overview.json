@@ -1,0 +1,43 @@
+{
+  "sections": [
+    {
+      "title": "About Capital",
+      "links": [
+        {
+          "title": "System Principles",
+          "url": "overview/principles"
+        },
+        {
+          "title": "System Glossary",
+          "url": "overview/glossary"
+        }
+      ]
+    },
+    {
+      "title": "Getting Started",
+      "links": [
+        {
+          "title": "Developers",
+          "url": "overview/gettingstarted/developers"
+        },
+        {
+          "title": "Designers",
+          "url": "overview/gettingstarted/designers"
+        }
+      ]
+    },
+    {
+      "title": "Contributing",
+      "links": [
+        {
+          "title": "Developers",
+          "url": "overview/contributing/developers"
+        },
+        {
+          "title": "Designers",
+          "url": "overview/contributing/designers"
+        }
+      ]
+    }
+  ]
+}

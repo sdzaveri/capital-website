@@ -22,7 +22,6 @@ const LayoutHome = props => (
         <p className={homeStyles.description}>
           enables OpenGov teams to build best-in-class government applications.
           The system is built and maintained by the OpenGov R&D team.
-          It offers React components, design guidelines, and interaction patterns.
         </p>
       </div>
       <div className={styles.content}>

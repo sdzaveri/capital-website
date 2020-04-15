@@ -1,15 +1,19 @@
 @import '~@opengov/capital-style/scss/tokens';
 
 .homeIcon {
-  height: $unit-8;
+  height: $unit-6;
   width: auto;
   margin-bottom: $unit-3;
+
+  @media #{$mq-medium-up} {
+    height: $unit-8;
+  }
 }
 
 .homeTitle {
   background-color: $color-primary-dark;
   color: white;
-  padding: $unit-20 $unit-8 $unit-20;
+  padding: $unit-8 $unit-6 $unit-10;
   line-height: $line-height-tight;
   font-weight: 500;
 
@@ -26,27 +30,47 @@
 
   h1 {
     color: white;
+
+    @media #{$mq-small} {
+      font-size: $font-size-xxlarge;
+    }
+  }
+
+  @media #{$mq-medium-up} {
+    padding: $unit-10 $unit-8 $unit-20;
   }
 }
 
 .description {
   max-width: 700px;
-  font-size: $font-size-xlarge;
+  font-size: $font-size-large;
   font-weight: $font-weight-book;
   display: block;
   line-height: $line-height-default;
   margin-bottom: $unit-2;
   text-shadow: $box-shadow-hard;
+
+  @media #{$mq-medium-up} {
+    font-size: $font-size-xlarge;
+  }
 }
 
 .homeGrid {
   max-width: 1400px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: $unit-4;
   position: relative;
   margin-top: -100px;
   margin-bottom: $unit-4;
+
+  @media #{$mq-medium-up} {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media #{$mq-large-up} {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .homeButton {

@@ -8,6 +8,12 @@ $leftNav-width: $unit-1 * 35;
     "nav  main";
   grid-template-rows: $unit-8 1fr;
   grid-template-columns: $leftNav-width 1fr;
+
+  @media #{$mq-small} {
+    grid-template-areas: "head head"
+      "main main";
+    grid-template-columns: 1fr;
+  }
 }
 
 main {
@@ -16,6 +22,10 @@ main {
   overflow: auto;
   grid-area: main;
   position: relative;
+
+  @media #{$mq-small} {
+    width: calc(100vw});
+  }
 }
 
 .homeWrapper {
@@ -54,10 +64,14 @@ main {
 .pageHeader {
   margin-top: 0;
   display: block;
-  padding: $unit-8 $unit-8;
+  padding: $unit-6;
   background-color: $color-gray-100;
   margin-bottom: 0;
   max-width: none;
+
+  @media #{$mq-medium-up} {
+    padding: $unit-8;
+  }
 
   .pageDescription {
     display: block;
@@ -68,7 +82,11 @@ main {
 
   &.sectionHeader {
     background-color: $color-primary-dark;
-    padding: $unit-20 $unit-8 $unit-20;
+    padding: $unit-10 $unit-6 $unit-10;
+
+    @media #{$mq-medium-up} {
+      padding: $unit-20 $unit-8 $unit-20;
+    }
 
     $bg-color: $color-primary-dark;
     $dot-color: $color-primary-medium;
@@ -95,7 +113,11 @@ main {
 }
 
 .content {
-  padding: $unit-6 $unit-8;
+  padding: $unit-4 $unit-6;
+
+  @media #{$mq-medium-up} {
+    padding: $unit-6 $unit-8;
+  }
 }
 
 .tabs {

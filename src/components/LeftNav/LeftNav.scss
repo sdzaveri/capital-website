@@ -7,6 +7,10 @@ $font-weight-medium: 500;
 $leftNav-width: $unit-1 * 35;
 
 .secondaryNav {
+  @media #{$mq-small} {
+    display: none;
+  }
+
   width: $leftNav-width;
   background-color: $color-gray-1000;
   padding: $unit-3 0;
@@ -114,5 +118,50 @@ $leftNav-width: $unit-1 * 35;
     margin-top: 0;
     border-top: 0;
     padding-top: 0;
+  }
+}
+
+.secondaryNavHeader {
+  background-color: $color-gray-1000;
+  text-align: right;
+  padding: $unit-3 0;
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      display: block;
+      position: relative;
+
+      a {
+        color: rgba(255, 255, 255, .75);
+        text-decoration: none;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        padding: $unit-1 $unit-3;
+        transition: $transition-natural;
+
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: black;
+          color: white;
+        }
+
+        &.activePage {
+          font-weight: $font-weight-bold;
+          color: $color-primary-focus;
+        }
+      }
+    }
+  }
+
+  @media #{$mq-medium-up} {
+    display: none;
   }
 }

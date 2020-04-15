@@ -38,7 +38,10 @@ const renderNavItems = section => {
   });
 };
 
-const LeftNav = ({ activeTab = 'overview' }) => {
+const LeftNav = ({
+  activeTab = 'overview',
+  variant = ''
+}) => {
   const navigationMenuJSX = [];
   navigation[activeTab].sections.map(section => {
     if (section.package) {
@@ -59,20 +62,19 @@ const LeftNav = ({ activeTab = 'overview' }) => {
       navigationMenuJSX.push(renderNavItems(section));
     }
 
-    return;
+    return null;
   });
 
   return (
-    <nav aria-label="Side navigation" className={styles.secondaryNav}>
+    <nav aria-label="Side navigation" className={variant === 'header' ? styles.secondaryNavHeader : styles.secondaryNav}>
       <ul>{navigationMenuJSX}</ul>
     </nav>
   );
 };
 
 LeftNav.propTypes = {
-  activeTab: PropTypes.string
+  activeTab: PropTypes.string,
+  variant: PropTypes.string
 };
-
-LeftNav.defaultProps = {};
 
 export { LeftNav };

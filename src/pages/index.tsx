@@ -20,10 +20,10 @@ export default () => (
           <p>Learn how to use and contribute to CDS and the component library.</p>
         </div>
       </Link>
-      <Link to="/patterns" className={styles.homeButton}>
+      <Link to="/styles" className={styles.homeButton}>
       <div className={styles.homeButtonIcon}><img src={design} alt="" role="presentation" /></div>
         <div>
-          <Header variant="h3" className="websiteH3">Patterns & Styles</Header>
+          <Header variant="h3" className="websiteH3">Styles</Header>
           <p>The patterns and design guidelines that shape the design system.</p>
         </div>
       </Link>
@@ -32,6 +32,13 @@ export default () => (
         <div>
           <Header variant="h3" className="websiteH3">Components</Header>
           <p>API and usage guidelines for all packages built with CDS.</p>
+        </div>
+      </Link>
+      <Link to="/patterns" className={styles.homeButton}>
+      <div className={styles.homeButtonIcon}><img src={design} alt="" role="presentation" /></div>
+        <div>
+          <Header variant="h3" className="websiteH3">Patterns</Header>
+          <p>The patterns and design guidelines that shape the design system.</p>
         </div>
       </Link>
     </div>

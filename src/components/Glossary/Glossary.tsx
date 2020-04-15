@@ -65,6 +65,8 @@ export const Glossary: React.FC<IGlossaryProps> = ({
                   {term.term.charAt(0)}
                 </a>
               );
+            } else {
+              return null;
             }
           })
         }

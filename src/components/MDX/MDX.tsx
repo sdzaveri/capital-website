@@ -4,8 +4,9 @@ import React from 'react';
 import styles from './MDX.scss';
 
 const Grid = (props) => {
+  const columnsClass = "columns" + props.columns;
   return (
-    <div className={`${styles.grid} ${styles[props.columns]}`}>
+    <div className={`${styles.grid} ${styles[columnsClass]}`}>
       {props.children}
     </div>
   );

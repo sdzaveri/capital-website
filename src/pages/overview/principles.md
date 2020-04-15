@@ -10,7 +10,7 @@ Capital design system enables OpenGov teams to build best-in-class government ap
 
 **We believe to be successful, it should adhere to the following principles:**
 
-<Grid>
+<Grid columns={2}>
   <div>
     <h3>Quality</h3>
     As the base of all OpenGov applications, it is important that the system meets the highest standards of quality.

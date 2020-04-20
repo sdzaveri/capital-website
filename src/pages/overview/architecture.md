@@ -23,13 +23,7 @@ Capital Design System is made up of 3 libraries, each built based on the OpenGov
 
 ## OpenGov Brand
 
-Brand elements are the basic building blocks of the OpenGov corporate identity.
-
-Example Artifacts
-
-* Logo
-* Brand colors
-* Tone of voice
+The brand elements is the basic building blocks of the OpenGov corporate identity. Brand does not only defines our colors, font and logos. It defines the tone of voice we want our products to convey and the principles we want to build them on. The design system exists to amplify the brand across all products.
 
 ## UI Style Library
 

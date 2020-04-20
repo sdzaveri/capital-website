@@ -18,19 +18,19 @@
       "links": [
         {
           "title": "Color",
-          "url": "/patterns/color"
+          "url": "/styles/color"
         },
         {
           "title": "Typography",
-          "url": "/patterns/typography"
+          "url": "/styles/typography"
         },
         {
           "title": "Iconography",
-          "url": "/patterns/iconography"
+          "url": "/styles/iconography"
         },
         {
           "title": "Illustration",
-          "url": "/patterns/illustration"
+          "url": "/styles/illustration"
         }
       ]
     },

@@ -1,7 +1,7 @@
 ---
 title: Iconography
 description: Capital icons are used to give a visual representation of something functional.
-activeTab: patterns
+activeTab: styles
 ---
 
 import { Icon } from '@opengov/component-library/capital'

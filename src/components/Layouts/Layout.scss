@@ -99,7 +99,7 @@ main {
     margin-top: $unit-3;
     font-size: $font-size-large;
     color: $color-gray-700;
-    margin-bottom: $unit-6;
+    padding-bottom: $unit-6;
 
     @edia #{$mq-medium-up} {
       margin-bottom: $unit-8;

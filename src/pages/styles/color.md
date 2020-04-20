@@ -1,7 +1,7 @@
 ---
 title: Colors
 description: Using colors in Capital
-activeTab: patterns
+activeTab: styles
 ---
 
 # The thinking behind the color system

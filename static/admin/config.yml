@@ -13,6 +13,7 @@ collections:
     extension: "json"
     format: "json"
     folder: src/data/navigation
+    slug: "{{slug}}"
     editor:
        preview: false
     fields:
@@ -32,6 +33,7 @@ collections:
     extension: "json"
     format: "json"
     folder: src/data/glossary
+    slug: "{{slug}}"
     editor:
        preview: false
     fields:

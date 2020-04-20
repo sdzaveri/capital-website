@@ -5,17 +5,17 @@ activeTab: overview
 ---
 Capital Design System is made up of 3 libraries, each built based on the OpenGov brand and guidelines.
 
-<div style="text-align: center; color: white; width: 100%;  padding: 24px; border: 2px solid gray; line-height: 1.4; max-width: 500px;">
+<div style="text-align: center; color: white; width: 100%;  padding: 16px; border: 2px solid #CED2D6; line-height: 1.4; max-width: 500px;">
 
 <div style="background-color:  #165CAB; padding: 16px;">OpenGov Brand</div>
 
 <div style="margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 16px;">
 
-<div style="background-color: #044187; padding: 24px 16px; >UI Style <br />Library</div>
+<div style="background-color: #044187; padding: 24px 16px;">UI Style<br />Library</div>
 
-<div style="background-color: #044187; padding: 24px 16px;">Component Library</div>
+<div style="background-color: #044187; padding: 24px 16px;">Component<br/>Library</div>
 
-<div style="background-color: #044187; padding: 24px 16px;">Pattern <br />Library</div>
+<div style="background-color: #044187; padding: 24px 16px;">Pattern<br />Library</div>
 
 </div>
 

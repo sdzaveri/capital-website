@@ -1,7 +1,7 @@
 ---
 title: System Principles
 description: Some page description
-activeTab: overview
+activeTab: components
 ---
 
 import { Grid } from '../../components/MDX';

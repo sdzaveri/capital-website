@@ -1,11 +1,15 @@
-import { Header, Input, InputGroup, Label } from '@opengov/component-library/capital';
+import { Header, Input, InputGroup } from '@opengov/component-library/capital';
 import Fuse from 'fuse.js';
 // import { Link } from 'gatsby';
 import React, { useState } from 'react';
 
+import tocStyles from '../Layouts/TOC.scss';
+
 import styles from './Glossary.scss';
 
-export const TERM_SEARCH_FIELDS = ['term', 'definition', 'tags', 'relatedTerms'];
+const TERM_SEARCH_FIELDS = ['term', 'definition', 'tags', 'relatedTerms'];
+
+const ALPHABET = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 const displayDefinition = (term) => (
   <div className={styles.term} key={term.term}>
@@ -19,6 +23,19 @@ const displayDefinition = (term) => (
   </div>
 );
 
+const filterLetters = (filteredTerms) => {
+  let filteredLetters = {};
+  ALPHABET.map((letter) => {
+    filteredLetters[letter] = false;
+  });
+
+  filteredTerms.map((term, index) => {
+    filteredLetters[term.term.charAt(0)] = true;
+  });
+
+  return filteredLetters;
+}
+
 export interface IGlossaryProps {
   terms?: any[];
 }
@@ -28,6 +45,7 @@ export const Glossary: React.FC<IGlossaryProps> = ({
 }) => {
   const [searchText, setSearchText] = useState('');
   let filteredTerms = [];
+  let filteredLetters = [];
 
   const fuse = new Fuse(terms, {
     keys: TERM_SEARCH_FIELDS,
@@ -36,15 +54,36 @@ export const Glossary: React.FC<IGlossaryProps> = ({
 
   if (searchText.length) {
     filteredTerms = fuse.search(searchText);
+    filteredLetters = filterLetters(filteredTerms);
   } else {
     filteredTerms = terms;
+    filteredLetters = filterLetters(filteredTerms);
   }
 
   let previousLetter = "";
   let previousTerm = "";
 
+  const characterJump = (
+    <ul className={tocStyles.toc}>
+      {
+        ALPHABET.map((letter) => {
+          if (filteredLetters[letter]) {
+            return (
+              <li><a className={tocStyles.letter} href={`#${letter}`}>{letter}</a></li>
+            );
+          } else {
+            return (
+              <li><span className={tocStyles.letterDisabled}>{letter}</span></li>
+            );
+          }
+        })
+      }
+    </ul>
+  );
+
   return (
     <>
+      {characterJump}
       <div className={styles.toolbar}>
         <InputGroup>
           <InputGroup.Prefix>
@@ -52,24 +91,6 @@ export const Glossary: React.FC<IGlossaryProps> = ({
           </InputGroup.Prefix>
           <Input.Text onChange={setSearchText} placeholder="Filter by name, definition, or related terms" />
         </InputGroup>
-        <Label>By letter: </Label>
-        {
-          filteredTerms.map((term, index) => {
-            if (previousLetter !== term.term.charAt(0)) {
-              previousLetter = term.term.charAt(0);
-              return (
-                <a
-                  className={styles.letterButton}
-                  href={'#' + term.term.charAt(0)}
-                >
-                  {term.term.charAt(0)}
-                </a>
-              );
-            } else {
-              return null;
-            }
-          })
-        }
       </div>
       <dl className={styles.glossary}>
       {

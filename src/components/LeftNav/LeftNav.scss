@@ -4,6 +4,7 @@
 $font-weight-book: 300;
 $font-weight-medium: 500;
 
+$leftNav-width-small: $unit-1 * 30;
 $leftNav-width: $unit-1 * 35;
 
 .secondaryNav {
@@ -11,12 +12,20 @@ $leftNav-width: $unit-1 * 35;
     display: none;
   }
 
-  width: $leftNav-width;
-  background-color: $color-gray-1000;
+  width: $leftNav-width-small;
+  background-color: $color-white;
+  border-right: $border-gray-300;
   padding: $unit-3 0;
   grid-area: nav;
   height: calc(100vh - #{$unit-8});
   overflow-y: auto;
+  font-size: $font-size-small;
+
+  @media #{$mq-large-up} {
+    width: $leftNav-width;
+    font-size: $font-size-default;
+  }
+
 
   ul {
     margin: 0;
@@ -28,10 +37,9 @@ $leftNav-width: $unit-1 * 35;
       list-style-type: none;
       display: block;
       position: relative;
-      width: $leftNav-width;
 
       a {
-        color: rgba(255, 255, 255, .75);
+        color: $color-gray-1000;
         text-decoration: none;
         cursor: pointer;
         width: 100%;
@@ -43,54 +51,20 @@ $leftNav-width: $unit-1 * 35;
         &:hover,
         &:active,
         &:focus {
-          background-color: black;
-          color: white;
+          color: $color-primary-selection;
         }
 
         &.activePage {
-          font-weight: $font-weight-medium;
-          color: $color-primary-focus;
-          background-color: black;
+          font-weight: $font-weight-bold;
+          color: $color-primary-selection;
         }
       }
-
-      // .navTooltip {
-      //   color: white;
-      //   background-color: $color-gray-1000;
-      //   font-size: $font-size-small;
-      //   padding: $unit-1;
-      //   position: absolute;
-      //   top: 50%;
-      //   left: $leftNav-width;
-      //   margin-left: $unit-1;
-      //   z-index: $z-index-flash;
-      //   width: $leftNav-width;
-      //   transform: translateY(-50%);
-      //   display: none;
-      //
-      //   &:before {
-      //     content: " ";
-      //     position: absolute;
-      //     top: 50%;
-      //     right: 100%; /* To the right of the tooltip */
-      //     margin-top: -1*$unit-1;
-      //     border-width: $unit-1;
-      //     border-style: solid;
-      //     border-color: transparent $color-gray-1000 transparent transparent;
-      //   }
-      // }
-      //
-      // &:hover {
-      //   .navTooltip {
-      //     display: block;
-      //   }
-      // }
     }
   }
 }
 
 .section {
-  color: rgba(255,255,255,.5);
+  color: $color-gray-700;
   font-variant: small-caps;
   text-transform: lowercase;
   font-weight: $font-weight-regular;
@@ -101,23 +75,6 @@ $leftNav-width: $unit-1 * 35;
 
   &:first-child {
     margin-top: 0;
-  }
-}
-
-.package {
-  color: $color-white;
-  font-weight: $font-weight-medium;
-  margin-top: $unit-3;
-  font-size: $font-size-large;
-  padding: $unit-3 $unit-3 0;
-  border-top: 1px solid rgba(255, 255, 255, .1);
-  margin-bottom: $unit-2;
-
-
-  &:first-child {
-    margin-top: 0;
-    border-top: 0;
-    padding-top: 0;
   }
 }
 

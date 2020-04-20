@@ -4,8 +4,6 @@ import { Header } from '@opengov/component-library/capital';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import opengovIcon from '../../images/OpenGov-Icon-White.png';
-
 import { WebsiteFooter } from '../WebsiteFooter';
 import { WebsiteHeader } from '../WebsiteHeader';
 
@@ -17,7 +15,6 @@ const LayoutHome = props => (
     <WebsiteHeader />
     <main>
       <div className={homeStyles.homeTitle}>
-        <img src={opengovIcon} className={homeStyles.homeIcon} alt="OpenGov Icon" />
         <Header variant="hero">Capital Design System</Header>
         <p className={homeStyles.description}>
           enables OpenGov teams to build best-in-class government applications.

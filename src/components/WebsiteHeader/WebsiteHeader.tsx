@@ -2,6 +2,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
+import opengovIcon from '../../images/OpenGov-Icon-White.png';
 import { LeftNav } from '../LeftNav';
 
 import styles from './WebsiteHeader.scss';
@@ -11,6 +12,7 @@ const WebsiteHeader = props => {
 
   return (
     <header className={styles.header}>
+      <img src={opengovIcon} className={styles.logo} alt="OpenGov Icon" />
       <Link to="/" className={styles.siteTitle}>
         <strong>Capital</strong> Design System
       </Link>

@@ -3,9 +3,9 @@
 import { Header } from '@opengov/component-library/capital';
 import React from 'react';
 
-import { ToolsTable } from '../../components';
-import LayoutDefault from '../../components/Layouts/LayoutDefault';
-import tocStyles from '../../components/Layouts/TOC.scss';
+import { ToolsTable } from '../../../components';
+import LayoutDefault from '../../../components/Layouts/LayoutDefault';
+import tocStyles from '../../../components/Layouts/TOC.scss';
 
 const TokensTOC = props => (
   <ul className={tocStyles.toc}>
@@ -50,11 +50,11 @@ export default () => (
     tabs={[
       {
         name: 'Tokens',
-        url: '/tokens'
+        url: '/styles/tokens'
       },
       {
         name: 'Mixins',
-        url: '/mixins'
+        url: '/styles/tokens/mixins'
       }
     ]}
   >

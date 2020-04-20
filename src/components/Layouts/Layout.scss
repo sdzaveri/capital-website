@@ -1,30 +1,41 @@
 @import '~@opengov/capital-style/scss/tokens';
 
+$leftNav-width-small: $unit-1 * 30;
 $leftNav-width: $unit-1 * 35;
+
 
 .bodyWrapper {
   display: grid;
   grid-template-areas: "head head"
     "nav  main";
   grid-template-rows: $unit-8 1fr;
-  grid-template-columns: $leftNav-width 1fr;
+  grid-template-columns: $leftNav-width-small 1fr;
 
   @media #{$mq-small} {
     grid-template-areas: "head head"
       "main main";
     grid-template-columns: 1fr;
   }
+
+  @media #{$mq-large-up} {
+    grid-template-columns: $leftNav-width 1fr;
+  }
+
 }
 
 main {
-  width: calc(100vw - #{$leftNav-width});
+  width: calc(100vw});
   height: calc(100vh - #{$unit-8});
   overflow: auto;
   grid-area: main;
   position: relative;
 
-  @media #{$mq-small} {
-    width: calc(100vw});
+  @media #{$mq-medium-up} {
+    width: calc(100vw - #{$leftNav-width-small});
+  }
+
+  @media #{$mq-large-up} {
+    width: calc(100vw - #{$leftNav-width});
   }
 }
 
@@ -64,13 +75,23 @@ main {
 .pageHeader {
   margin-top: 0;
   display: block;
-  padding: $unit-6;
-  background-color: $color-gray-100;
+  padding: $unit-6 $unit-6 0;
+  background-color: $color-gray-50;
+  $bg-color: $color-gray-50;
+  $dot-color: $color-gray-200;
+  $dot-size: 2px;
+  $dot-space: 22px;
+
+  background:
+    linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+    linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
+    $dot-color;
+  background-size: $dot-space $dot-space;
   margin-bottom: 0;
   max-width: none;
 
   @media #{$mq-medium-up} {
-    padding: $unit-8;
+    padding: $unit-8 $unit-8 0;
   }
 
   .pageDescription {
@@ -78,29 +99,34 @@ main {
     margin-top: $unit-3;
     font-size: $font-size-large;
     color: $color-gray-700;
+    margin-bottom: $unit-6;
+
+    @edia #{$mq-medium-up} {
+      margin-bottom: $unit-8;
+    }
   }
 
   &.sectionHeader {
-    background-color: $color-primary-dark;
-    padding: $unit-10 $unit-6 $unit-10;
+    padding: $unit-6;
 
     @media #{$mq-medium-up} {
-      padding: $unit-20 $unit-8 $unit-20;
+      padding: $unit-8 $unit-8 $unit-8;
     }
 
-    $bg-color: $color-primary-dark;
-    $dot-color: $color-primary-medium;
-    $dot-size: 2px;
-    $dot-space: 22px;
-
-  	background:
-  		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-  		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-  		$dot-color;
-  	background-size: $dot-space $dot-space;
+    .sectionHeaderIcon {
+      height: $unit-1 * 15;
+      margin-bottom: $unit-3;
+    }
 
     h1 {
-      color: white;
+      font-size: 4rem;
+    }
+
+    .sectionDescription {
+      display: block;
+      margin-top: $unit-3;
+      font-size: $font-size-xlarge;
+      color: $color-gray-700;
     }
   }
 
@@ -123,10 +149,10 @@ main {
 .tabs {
   display: flex;
   padding: 0;
-  margin: ($unit-4 * -1) 0 0;
+  margin:0 0;
   list-style-type: none;
-  background-color: $color-gray-100;
-  padding: 0 $unit-7;
+  background-color: transparent;
+  padding: 0;
 
   li {
     margin-right: $unit-2;

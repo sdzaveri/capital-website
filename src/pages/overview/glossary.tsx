@@ -7,6 +7,8 @@ import { Glossary } from '../../components';
 
 import systemGlossary from '../../data/glossary/system.json';
 
+import tocStyles from '../../components/Layouts/TOC.scss';
+
 export default () => (
   <LayoutDefault
     activeTab="overview"

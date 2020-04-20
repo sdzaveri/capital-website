@@ -5,7 +5,7 @@ import React from 'react';
 import LayoutSection from '../../components/Layouts/LayoutSection';
 
 export default () => (
-  <LayoutSection activeTab="overview" title="Overview">
+  <LayoutSection activeTab="overview" title="Overview" description="Learn how to use and contribute to CDS and the component library.">
     Capital Design System is built by and for the OpenGov R&D team. The system comes with a few important goals:
     <ol>
       <li>Blah</li>

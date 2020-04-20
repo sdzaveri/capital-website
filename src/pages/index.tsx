@@ -6,39 +6,46 @@ import React from 'react';
 
 import LayoutHome from '../components/Layouts/LayoutHome';
 import styles from '../components/Layouts/LayoutHome.scss';
-import code from '../images/code.svg';
-import design from '../images/design.svg';
-import overview from '../images/overview.svg';
+import componentsIcon from '../images/components-white.svg';
+import overviewIcon from '../images/overview-white.svg';
+import patternsIcon from '../images/patterns-white.svg';
+import stylesIcon from '../images/styles-white.svg';
 
 export default () => (
   <LayoutHome>
     <div className={styles.homeGrid}>
       <Link to="/overview" className={styles.homeButton}>
-      <div className={styles.homeButtonIcon}><img src={overview} alt="" role="presentation" /></div>
-        <div>
-          <Header variant="h3" className="websiteH3">Overview</Header>
-          <p>Learn how to use and contribute to CDS and the component library.</p>
+      <div className={styles.homeButtonIcon}>
+        <img src={overviewIcon} alt="" role="presentation" />
+      </div>
+        <span className={styles.homeButtonHeader}>Overview</span>
+        <div className={styles.homeButtonDescription}>
+          Learn how to use and contribute to CDS and the component library.
         </div>
       </Link>
       <Link to="/styles" className={styles.homeButton}>
-      <div className={styles.homeButtonIcon}><img src={design} alt="" role="presentation" /></div>
-        <div>
-          <Header variant="h3" className="websiteH3">Styles</Header>
-          <p>The patterns and design guidelines that shape the design system.</p>
+      <div className={styles.homeButtonIcon}><img src={stylesIcon} alt="" role="presentation" /></div>
+      <span className={styles.homeButtonHeader}>Styles</span>
+        <div className={styles.homeButtonDescription}>
+          The patterns and design guidelines that shape the design system.
         </div>
       </Link>
       <Link to="/components" className={styles.homeButton}>
-        <div className={styles.homeButtonIcon}><img src={code} alt="" role="presentation" /></div>
-        <div>
-          <Header variant="h3" className="websiteH3">Components</Header>
-          <p>API and usage guidelines for all packages built with CDS.</p>
+        <div className={styles.homeButtonIcon}>
+          <img src={componentsIcon} alt="" role="presentation" />
+        </div>
+        <span className={styles.homeButtonHeader}>Components</span>
+        <div className={styles.homeButtonDescription}>
+          API and usage guidelines for all packages built with CDS.
         </div>
       </Link>
       <Link to="/patterns" className={styles.homeButton}>
-      <div className={styles.homeButtonIcon}><img src={design} alt="" role="presentation" /></div>
-        <div>
-          <Header variant="h3" className="websiteH3">Patterns</Header>
-          <p>The patterns and design guidelines that shape the design system.</p>
+      <div className={styles.homeButtonIcon}>
+        <img src={patternsIcon} alt="" role="presentation" />
+      </div>
+      <span className={styles.homeButtonHeader}>Patterns</span>
+        <div className={styles.homeButtonDescription}>
+          The patterns and design guidelines that shape the design system.
         </div>
       </Link>
     </div>

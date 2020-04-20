@@ -1,6 +1,7 @@
 /* tslint:disable:no-default-export */
 
 import { Header } from '@opengov/component-library/capital';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -13,16 +14,31 @@ const LayoutDefault = props => (
     <div className={styles.pageHeader}>
       <Header variant="hero">{props.title}</Header>
       <p className={styles.pageDescription}>{props.description && props.description}</p>
+      {props.tabs ? (
+        <ul className={styles.tabs} role="navigation">
+          {props.tabs.map((tab) => (
+            <li>
+              <Link
+                activeClassName={styles.tabsActive}
+                to={tab.url}
+              >
+                {tab.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      ) : ''}
     </div>
     <div className={styles.content}>{props.children}</div>
   </LayoutBase>
 );
 
 LayoutDefault.propTypes = {
-  children: PropTypes.node.isRequired,
   activeTab: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  description: PropTypes.string,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string
+  tabs: PropTypes.array
 };
 
 export default LayoutDefault;

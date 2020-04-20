@@ -5,7 +5,7 @@ $font-weight-book: 300;
 $font-weight-medium: 500;
 
 .header {
-  background-color: $color-primary-brand;
+  background-color: $color-gray-1000;
   color: white;
   padding: 0 $unit-3;
   display: flex;
@@ -13,11 +13,18 @@ $font-weight-medium: 500;
   grid-area: head;
   overflow: visible;
 
+  .logo {
+    height: $unit-4;
+    margin-right: $unit-2;
+  }
+
   .siteTitle {
     color: white;
     text-decoration: none;
     margin-right: $unit-3;
     font-size: $font-size-large;
+    line-height: 1.4;
+    font-weight: $font-weight-regular;
   }
 
   .menuToggle {
@@ -144,11 +151,11 @@ $font-weight-medium: 500;
           margin: 0 $unit-half;
 
           a {
-            color: rgba(255,255,255,.8);
+            color: $color-gray-400;
             line-height: calc(#{$unit-8} - 3px);
             padding: 0 $unit-2;
             text-decoration: none;
-            border-bottom: 2px solid transparent;
+            border-bottom: 5px solid transparent;
             height: $unit-8;
             display: block;
             transition: $transition-natural;
@@ -156,7 +163,7 @@ $font-weight-medium: 500;
             &:hover,
             &:active,
             &:focus {
-              border-bottom: 3px solid white;
+              border-bottom: 5px solid white;
               color: white;
             }
 
@@ -168,7 +175,7 @@ $font-weight-medium: 500;
           &.activeTab {
             a {
               color: white;
-              border-bottom: 3px solid white;
+              border-bottom: 5px solid $color-primary-selection;
               font-weight: $font-weight-regular;
             }
           }

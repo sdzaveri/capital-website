@@ -39,4 +39,21 @@
       color: $color-primary-selection;
     }
   }
+
+  a.letter,
+  span.letterDisabled {
+    font-size: $font-size-small;
+    padding: $unit-quarter 0;
+    color: $color-gray-700;
+    display: block;
+    text-decoration: none;
+  }
+
+  a.letter:hover {
+    color: $color-primary-selection;
+  }
+
+  span.letterDisabled {
+    color: $color-gray-200;
+  }
 }

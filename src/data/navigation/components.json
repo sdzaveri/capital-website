@@ -1,11 +1,29 @@
 {
   "sections": [
     {
+      "title": "About the Library",
+      "links": [
+        {
+          "title": "Principles",
+          "url": "/principles"
+        },
+        {
+          "title": "Using Components",
+          "url": "/using"
+        },
+        {
+          "title": "Contributing",
+          "url": "/contributing"
+        }
+      ]
+    },
+    {
       "title": "Components",
       "links": [
         {
-          "title": "UI Vocabulary",
-          "url": "/components"
+          "title": "Storybook",
+          "url": "/components",
+          "external": true
         }
       ]
     }

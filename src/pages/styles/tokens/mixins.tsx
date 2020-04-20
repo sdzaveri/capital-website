@@ -3,9 +3,9 @@
 import { Header } from '@opengov/component-library/capital';
 import React from 'react';
 
-import { ToolsTable } from '../../components';
-import LayoutReference from '../../components/Layouts/LayoutReference';
-import tocStyles from '../../components/Layouts/TOC.scss';
+import { ToolsTable } from '../../../components';
+import LayoutDefault from '../../../components/Layouts/LayoutDefault';
+import tocStyles from '../../../components/Layouts/TOC.scss';
 
 export const MixinTOC = props => (
   <ul className={tocStyles.toc}>
@@ -15,17 +15,18 @@ export const MixinTOC = props => (
 
 
 export default () => (
-  <LayoutReference
+  <LayoutDefault
+    activeTab="styles"
     title="Tokens"
     description="Tokens are Sass variables that support OpenGov styles."
     tabs={[
       {
         name: 'Tokens',
-        url: '/tokens'
+        url: '/styles/tokens'
       },
       {
         name: 'Mixins',
-        url: '/mixins'
+        url: '/styles/tokens/mixins'
       }
     ]}
   >
@@ -49,5 +50,5 @@ export default () => (
         ]
       }
     />
-  </LayoutReference>
+  </LayoutDefault>
 );

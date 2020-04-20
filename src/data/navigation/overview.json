@@ -4,8 +4,8 @@
       "title": "About Capital",
       "links": [
         {
-          "title": "System Principles",
-          "url": "overview/principles"
+          "title": "System Architecture",
+          "url": "overview/architecture"
         },
         {
           "title": "System Glossary",

@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: sdzaveri/capital-website-netlify
+  repo: sdzaveri/capital-website
 
 publish_mode: editorial_workflow
 

@@ -4,6 +4,10 @@
       "title": "About Capital",
       "links": [
         {
+          "title": "What is a design system?",
+          "url": "overview/whatisadesignsystem"
+        },
+        {
           "title": "System Architecture",
           "url": "overview/architecture"
         },
@@ -23,19 +27,6 @@
         {
           "title": "Designers",
           "url": "overview/gettingstarted/designers"
-        }
-      ]
-    },
-    {
-      "title": "Contributing",
-      "links": [
-        {
-          "title": "Developers",
-          "url": "overview/contributing/developers"
-        },
-        {
-          "title": "Designers",
-          "url": "overview/contributing/designers"
         }
       ]
     }

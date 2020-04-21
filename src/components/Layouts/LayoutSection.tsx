@@ -13,7 +13,7 @@ import patternsIcon from '../../images/patterns-gray.svg';
 import stylesIcon from '../../images/styles-gray.svg';
 
 const LayoutSection = props => (
-  <LayoutBase activeTab={props.activeTab} title={props.title}>
+  <LayoutBase activeTab={props.activeTab} title={props.title} displayFooter={false}>
     <div className={`${styles.pageHeader} ${styles.sectionHeader}`}>
       {props.activeTab === 'overview' ? <img src={overviewIcon} className={styles.sectionHeaderIcon} /> : null}
       {props.activeTab === 'components' ? <img src={componentsIcon} className={styles.sectionHeaderIcon} /> : null}
@@ -24,7 +24,6 @@ const LayoutSection = props => (
       <p className={styles.sectionDescription}>{props.description && props.description}</p>
 
     </div>
-    <div className={styles.content}>{props.children}</div>
   </LayoutBase>
 );
 

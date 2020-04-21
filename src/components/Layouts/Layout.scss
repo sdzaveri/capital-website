@@ -107,10 +107,11 @@ main {
   }
 
   &.sectionHeader {
+    min-height: calc(100vh - #{$unit-8});
     padding: $unit-6;
 
     @media #{$mq-medium-up} {
-      padding: $unit-8 $unit-8 $unit-8;
+      padding: $unit-10 $unit-8 $unit-8;
     }
 
     .sectionHeaderIcon {
@@ -127,6 +128,7 @@ main {
       margin-top: $unit-3;
       font-size: $font-size-xlarge;
       color: $color-gray-700;
+      max-width: 800px;
     }
   }
 
@@ -140,9 +142,14 @@ main {
 
 .content {
   padding: $unit-4 $unit-6;
+  max-width: 800px;
 
   @media #{$mq-medium-up} {
     padding: $unit-6 $unit-8;
+  }
+
+  &.contentWide {
+    max-width: none;
   }
 }
 

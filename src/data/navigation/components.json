@@ -22,7 +22,7 @@
       "links": [
         {
           "title": "Storybook",
-          "url": "/components",
+          "url": "https://opengov.github.io/voltron/component-library/",
           "external": true
         }
       ]

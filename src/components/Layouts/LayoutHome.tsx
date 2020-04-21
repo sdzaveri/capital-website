@@ -21,7 +21,7 @@ const LayoutHome = props => (
           The system is built and maintained by the OpenGov R&D team.
         </p>
       </div>
-      <div className={styles.content}>
+      <div className={`${styles.content} ${styles.contentWide}`}>
         {props.children}
       </div>
       <WebsiteFooter />

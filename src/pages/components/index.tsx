@@ -1,14 +1,9 @@
-/* tslint:disable:no-default-export max-line-length  */
+/* tslint:disable:no-default-export */
 
 import React from 'react';
 
-import { WebsiteHeader } from '../../components/WebsiteHeader';
+import LayoutSection from '../../components/Layouts/LayoutSection';
 
 export default () => (
-  <>
-    <WebsiteHeader activeTab="components" />
-    <div className="iframeContainer">
-      <iframe title="CDS Storybook" border="0" width="100%" height="100%" src="https://opengov.github.io/voltron/component-library/?path=/story/capital-accordionwizard--basic" />
-    </div>
-  </>
+  <LayoutSection activeTab="components" title="Components" description="Guidelines for using components and contributing to the component library for designers and developers." />
 );

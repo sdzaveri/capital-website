@@ -12,7 +12,7 @@ import { WebsiteHeader } from '../WebsiteHeader';
 import './base.scss';
 import styles from './Layout.scss';
 
-const LayoutBase = props => {
+const LayoutBase = (props) => {
   return (
     <>
     <SEO title={props.title} />
@@ -21,7 +21,7 @@ const LayoutBase = props => {
       <LeftNav activeTab={props.activeTab} />
       <main>
         {props.children}
-        <WebsiteFooter />
+        {props.displayFooter ? <WebsiteFooter /> : null}
       </main>
     </div>
     </>
@@ -31,7 +31,12 @@ const LayoutBase = props => {
 LayoutBase.propTypes = {
   children: PropTypes.node.isRequired,
   activeTab: PropTypes.string.isRequired,
+  displayFooter: PropTypes.bool,
   title: PropTypes.string
+};
+
+LayoutBase.defaultProps = {
+  displayFooter: true
 };
 
 export default LayoutBase;

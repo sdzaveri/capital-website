@@ -116,8 +116,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-// -- Fixing some broken components, should move these to component styles
-
 :focus {
   outline: none;
 }
@@ -142,17 +140,6 @@ body {
 b,
 strong {
   font-weight: $font-weight-bold;
-}
-
-p,
-table,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  max-width: 900px;
 }
 
 // Header Styles

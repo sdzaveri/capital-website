@@ -5,13 +5,5 @@ import React from 'react';
 import LayoutSection from '../../components/Layouts/LayoutSection';
 
 export default () => (
-  <LayoutSection activeTab="styles" title="Styles">
-    <p>This section is still under construction.</p>
-    <h2>Visuals</h2>
-    Descrription about this section
-    <h2>Layout</h2>
-    Descrription about this section
-    <h2>Animation / Motion</h2>
-    Descrription about this section
-  </LayoutSection>
+  <LayoutSection activeTab="styles" title="Styles" description="Details behind the visual style of CDS UI, and resources for designers and developers to implement it." />
 );

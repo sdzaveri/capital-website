@@ -17,6 +17,7 @@ collections:
     editor:
        preview: false
     fields:
+      - {name: title}
       - name: sections
         label: Sections
         widget: list
@@ -37,6 +38,7 @@ collections:
     editor:
        preview: false
     fields:
+      - {name: title}
       - name: terms
         label: Terms
         widget: list

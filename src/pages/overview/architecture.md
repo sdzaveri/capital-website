@@ -5,7 +5,7 @@ activeTab: overview
 ---
 Capital Design System is made up of 3 libraries, each built based on the OpenGov brand and guidelines. While the three libraries might have some some overlap in guidelines, they serve different purposes.
 
-<div style="text-align: center; color: white; width: 100%;  padding: 16px; border: 1px solid #CED2D6; line-height: 1.4; max-width: 500px; margin-top: 24px; background-color: #EFF2F5">
+<div style="text-align: center; color: white; width: 100%; line-height: 1.4; max-width: 700px; margin-top: 24px; font-weight: 600">
 
 <div style="background-color:  #165CAB; padding: 16px;">OpenGov Brand</div>
 

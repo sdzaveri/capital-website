@@ -1,4 +1,5 @@
 {
+  "title": "Overview",
   "sections": [
     {
       "title": "About Capital",
@@ -30,6 +31,5 @@
         }
       ]
     }
-  ],
-  "title": "Overview"
+  ]
 }

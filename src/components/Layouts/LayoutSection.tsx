@@ -19,10 +19,8 @@ const LayoutSection = props => (
       {props.activeTab === 'components' ? <img src={componentsIcon} className={styles.sectionHeaderIcon} /> : null}
       {props.activeTab === 'styles' ? <img src={stylesIcon} className={styles.sectionHeaderIcon} /> : null}
       {props.activeTab === 'patterns' ? <img src={patternsIcon} className={styles.sectionHeaderIcon} /> : null}
-
       <Header variant="hero">{props.title}</Header>
       <p className={styles.sectionDescription}>{props.description && props.description}</p>
-
     </div>
   </LayoutBase>
 );

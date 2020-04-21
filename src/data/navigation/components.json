@@ -1,4 +1,5 @@
 {
+  "title": "Components",
   "sections": [
     {
       "title": "About the Library",
@@ -27,6 +28,5 @@
         }
       ]
     }
-  ],
-  "title": "Components"
+  ]
 }
